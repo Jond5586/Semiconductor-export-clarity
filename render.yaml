@@ -1,0 +1,8 @@
+# Render configuration for automatic deployment
+services:
+  - type: web
+    name: semiconductor-export-clarity
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
